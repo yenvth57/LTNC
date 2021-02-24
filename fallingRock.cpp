@@ -47,7 +47,7 @@ bool move(char a[100][100], int n, int m){
             for(int j=0;j<=m;j++)
                 stay[i-1][j] = a[i][j];
 
-        //add row empty "EEE...EE"
+        //add row empty "EEE...EE" at last
         for (int j=0;j<m;j++)
             stay[n-1][j] = 'E';
         stay[n-1][m] = '\0';
@@ -67,7 +67,7 @@ bool move(char a[100][100], int n, int m){
             for (int j=0; j<=m;j++)
                 left[i-1][j] = a[i][j];
         
-        //add row empty "EEE...EE"
+        //add row empty "EEE...EE" at last
         for (int j=0;j<m;j++)
             left[n-1][j] = 'E';
         left[n-1][m] = '\0';
@@ -89,7 +89,7 @@ bool move(char a[100][100], int n, int m){
             for (int j=0; j<=m;j++)
                 right[i-1][j] = a[i][j];
         
-        //add row empty "EEE...EE"
+        //add row empty "EEE...EE" at last
         for (int j=0;j<m;j++)
             right[n-1][j] = 'E';
         right[n-1][m] = '\0';
